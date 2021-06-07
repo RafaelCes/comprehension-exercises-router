@@ -20,7 +20,7 @@ class App extends Component {
           </li>
         </ul>
         <Route path='/about' component={ About } />
-        <Route path='/users' component={ Users } />
+        <Route path='/users' render={() => <Users greetingsMessage='Good Morning' />} />
         <Route exact path='/' component={ Home } />
       </BrowserRouter>
     );
